@@ -4,12 +4,9 @@ const Path=require("path");
 const Hoek=require("hoek");
 const rutas=require("./config/routes/index.js");
 const Moment=require("moment-timezone");
+const ServerConfig=require("./config/server.js");
 const server=new Hapi.Server();
-const web=server.connection({
-	port:3000,
-	host:"localhost"
-});
-
+server.connection(ServerConfig);
 server.register(
 	[require("vision"),require("inert")],
 	(er)=>{

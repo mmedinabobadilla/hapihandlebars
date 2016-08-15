@@ -27,7 +27,5 @@ server.start(
 	(er)=>{
 		if(er) throw er;
 		console.log("Servidor Corriendo "+server.info.uri);
-		var date=Moment().tz("America/Santiago").format("YYYY-MM-DD HH:MM:SS");
-		console.log(date);
 	}
 );

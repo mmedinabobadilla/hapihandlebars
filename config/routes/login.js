@@ -11,7 +11,7 @@ var login=[
 		method:["POST","GET"],
 		path:"/login",
 		handler:function(request,write){
-			write("un login");
+			var calculadora=new Clogin(write,55);
 		}
 	},
 	{

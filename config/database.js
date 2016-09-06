@@ -1,8 +1,8 @@
 var postgres={
 	hostname:"localhost",
-	port:5432,
-	database:"bioris",
-	username:"postgres",
-	password:"matias"
+	port:1234,
+	database:"database",
+	username:"user",
+	password:"pass"
 };
 module.exports.postgres=postgres;
